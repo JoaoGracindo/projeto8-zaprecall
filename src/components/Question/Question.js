@@ -1,5 +1,6 @@
-import React from "react"
-import Icon from "./Icon"
+import React from "react";
+import Icon from "../Icon";
+import './style.css';
 
 export default function Question ({question, answer, key}){
     const [turned, setTurned] = React.useState(false)
@@ -7,7 +8,7 @@ export default function Question ({question, answer, key}){
         <div>
             <div className={turned ? 'hidden' : 'front'}>
                 <div>
-                    Pergunta {key + 1}
+                    Pergunta {parseInt(key) + 1}
                 </div>
                 <div onClick={() => setTurned(true)}>
                     <Icon icon="play-outline"/>

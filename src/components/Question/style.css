@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+}
+
+.front{
+    width: 300px;
+    height: 65px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.question{
+    width: 299px;
+    height: 131px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+ion-icon{
+    width: 15px;
+    height: 15px;
+    color: black;
+}

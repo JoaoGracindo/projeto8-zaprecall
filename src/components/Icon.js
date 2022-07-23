@@ -1,5 +1,7 @@
-export default function Icon (icon){
+export default function Icon (props){
+    console.log(props)
+    console.log(props.icon)
     return (
-        <ion-icon name={icon}></ion-icon>
+        <ion-icon name={props.icon}></ion-icon>
     )
 }
