@@ -1,11 +1,20 @@
-export default function StartingPage(){
+import { useState } from "react"
+
+export default function StartingPage({clicado, iniciaRecall}){
+    
     return(
         <div>
             <div>
-                <img />
-                <span></span>
+                <div>
+                    <img src='./images/logo.png'/>
+                </div>
+                <div>
+                    ZapRecall
+                </div>
             </div>
-            <button></button>
+            <button onClick={() => iniciaRecall(clicado)}>
+                Iniciar Recall!
+            </button>
         </div>
     )
 }
