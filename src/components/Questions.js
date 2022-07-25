@@ -52,12 +52,32 @@ const cards = [
     }
 ]
 
+const deck = []
+
 
 export default function Questions() {
 
+    function gameDeck (){
+        let arr = []
+        for(let i = 0; i < cards.length; i++){
+            arr.push(cards[i])
+        }
+        for(let j = arr.length -1; j > 0; j--){
+            const k = Math.floor(Math.random() * (j + 1));
+            const temp = arr[j];
+            arr[j] = arr[k];
+            arr[k] = temp
+          }
+        for(let i = 0; i < 4; i++){
+            deck.push(arr[i])
+        }
+    }
+
+    gameDeck();
+
     return(
         <>
-            {cards.map((item,index) => (
+            {deck.map((item,index) => (
             <Question 
             {...item} 
             index={index}/>
