@@ -1,5 +1,5 @@
-import StartingPage from "./StartingPage"
-import Questions from "./Questions"
+import StartingPage from "./Startingpage/StartingPage"
+import Questions from "./Questions/Questions"
 import React from "react"
 
 

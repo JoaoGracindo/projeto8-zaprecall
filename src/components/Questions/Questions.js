@@ -1,6 +1,7 @@
 import React from "react";
-import Icon from "./Icon";
-import Question from "./Question/Question";
+import Icon from "../Icon";
+import Question from "../Question/Question";
+import './style.css';
 
 const cards = [
     {
@@ -76,13 +77,13 @@ export default function Questions() {
     gameDeck();
 
     return(
-        <>
+        <div className="deck">
             {deck.map((item,index) => (
             <Question 
             {...item} 
             index={index}/>
             ))}
-        </>
+        </div>
         
     )
 }
