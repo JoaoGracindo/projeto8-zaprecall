@@ -25,8 +25,22 @@
     border-radius: 5px;
 }
 
+.answer{
+    width: 299px;
+    height: 131px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
 ion-icon{
     width: 15px;
     height: 15px;
     color: black;
+}
+
+.answer button{
+    width: 85.17px;
+    height: 37.17px;
+    border-radius: 5px; 
 }
